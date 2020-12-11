@@ -1,7 +1,11 @@
 # CMake-Tutorial
+
 Make 工具有好几种：GNU Make、qmake、pmake等
+
 这些 Make 工具遵循着不同的规范和标准，所执行的 Makefile 格式也千差万别
+
 CMake它首先允许开发者编写一种平台无关的 CMakeList.txt 文件来定制整个编译流程，然后再根据目标用户的平台进一步生成所需的本地化 Makefile 和工程文件，如 Unix 的 Makefile 或 Windows 的 Visual Studio 工程。
+
 使用CMake生成Makefile并编译的流程：
 1、编写 CMake 配置文件 CMakeLists.txt 。
 2、执行命令 cmake PATH 或者 ccmake PATH 生成 Makefile（ccmake 和 cmake 的区别在于前者提供了一个交互式的界面）。其中， PATH 是 CMakeLists.txt 所在的目录。
